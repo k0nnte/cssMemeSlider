@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.contener_all{
+   max-width: 64rem;
+   height: 45rem;
+   width: 100%;
+   
+   background-color: black; 
+}
+
+.wraper_one{
+    width: 100%;
+    height: 90%;
+   background-color: blue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.slider{
+    width: 90%;
+    height: 90%;
+    background-color: red;
+    overflow: hidden;
+    
+}
+
+.slide_inviz{
+    display: flex;
+    width: 400%;
+    height: 100%;
+   
+   transition: all 0.3s ease;
+    
+}
+
+.mem_img{
+    width: 25%;
+    height: 100%;
+    
+}
+
+
+.wraper_two{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    background-color: green;
+    
+}
+
+.slider_text{
+    width: 10%;
+    
+    overflow: hidden;
+    
+}
+
+.text_invis{
+    display: flex;
+    width: 400%;
+    
+    transition: all 0.3s ease;
+}
+
+.text{
+    width: 25%;
+    
+}
+
+
+#but1:checked ~ .wraper_one>.slider>.slide_inviz{
+    transform: translate(0);
+}
+#but2:checked ~ .wraper_one>.slider>.slide_inviz{
+    transform: translate(-25%);
+}
+#but3:checked ~ .wraper_one>.slider>.slide_inviz{
+    transform: translate(-50%);
+}
+#but4:checked ~ .wraper_one>.slider>.slide_inviz{
+    transform: translate(-75%);
+}
+
+#but1:checked ~ .wraper_two>.slider_text>.text_invis{
+    transform: translate(0);
+}
+#but2:checked ~ .wraper_two>.slider_text>.text_invis{
+    transform: translate(-25%);
+}
+#but3:checked ~ .wraper_two>.slider_text>.text_invis{
+    transform: translate(-50%);
+}
+#but4:checked ~ .wraper_two>.slider_text>.text_invis{
+    transform: translate(-75%);
+}
