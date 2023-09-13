@@ -10,7 +10,9 @@
 
 .contener_all{
    max-width: 64rem;
+   /* height: 45rem; */
    height: 45rem;
+   
    width: 100%;
    
    background-color: rgb(37, 36, 36); 
@@ -45,6 +47,7 @@
 .mem_img{
     width: 25%;
     height: 100%;
+    object-fit: cover;
     
 }
 
@@ -59,7 +62,7 @@
 }
 
 .slider_text{
-    width: fit-content;
+    width: 20%;
     
     overflow: hidden;
     
@@ -105,10 +108,27 @@
     height: 1rem;
     border-radius: 50%;
     background-color: rgb(113, 113, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.labe_circle:hover{
+.labe_check{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    
+}
+
+.but_labe:hover .labe_circle{
    background-color: white; 
+}
+
+#but1:checked ~ .wraper_two .inp_control .but_labe:nth-of-type(1) .labe_circle .labe_check,
+#but2:checked ~ .wraper_two .inp_control .but_labe:nth-of-type(2) .labe_circle .labe_check,
+#but3:checked ~ .wraper_two .inp_control .but_labe:nth-of-type(3) .labe_circle .labe_check,
+#but4:checked ~ .wraper_two .inp_control .but_labe:nth-of-type(4) .labe_circle .labe_check{
+    background-color: black;
 }
 
 
